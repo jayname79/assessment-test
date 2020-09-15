@@ -4,12 +4,12 @@
 using Assessment_Test.DAL.DBEntites;
 #endregion
 
-namespace Promotion_Engine_DAL.Interface
+namespace Assessment_Test.DAL.Interface
 {
     public interface IItemDAL
     {
-        List<ItemMaster> GetItemMasters();
-        List<ActivePromotionRule> GetActivePromotionRules();
-        List<PromotionRuleType> GetPromotionRuleTypes();
+        IEnumerable<ItemMaster> GetItemMasters();
+        IEnumerable<ActivePromotionRule> GetActivePromotionRules();
+        IEnumerable<PromotionRuleType> GetPromotionRuleTypes();
     }
 }

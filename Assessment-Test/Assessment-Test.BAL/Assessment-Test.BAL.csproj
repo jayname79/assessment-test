@@ -41,8 +41,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Implementation\ComboPromotion.cs" />
+    <Compile Include="Implementation\Item.cs" />
+    <Compile Include="Implementation\ItemBAL.cs" />
+    <Compile Include="Implementation\OnePlusOnePromotion.cs" />
+    <Compile Include="Implementation\PromotionFactory.cs" />
+    <Compile Include="Interface\IItem.cs" />
+    <Compile Include="Interface\IItemBAL.cs" />
+    <Compile Include="Interface\IPromotion.cs" />
+    <Compile Include="Interface\IPromotionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Assessment-Test.Common\Assessment-Test.Common.csproj">
+      <Project>{08bb1751-072f-4c78-a876-5943a0d860b3}</Project>
+      <Name>Assessment-Test.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assessment-Test.DAL\Assessment-Test.DAL.csproj">
+      <Project>{a3bb04fe-4054-49ba-afe3-c7a254948b61}</Project>
+      <Name>Assessment-Test.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

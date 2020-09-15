@@ -1,7 +1,7 @@
 ﻿#region Project reference
 using Assessment_Test.Common;
 using Assessment_Test.DAL.DBEntites;
-using Promotion_Engine_DAL.Interface;
+using Assessment_Test.DAL.Interface;
 using System.Collections.Generic;
 #endregion
 
@@ -32,7 +32,7 @@ namespace Assessment_Test.DAL.Implementation
             return itemHardCodedDAL;
         }
 
-        public List<ActivePromotionRule> GetActivePromotionRules()
+        public IEnumerable<ActivePromotionRule> GetActivePromotionRules()
         {
             return new List<ActivePromotionRule>()
             {
@@ -63,7 +63,7 @@ namespace Assessment_Test.DAL.Implementation
             };
         }
 
-        public List<ItemMaster> GetItemMasters()
+        public IEnumerable<ItemMaster> GetItemMasters()
         {
             return new List<ItemMaster>() 
             { 
@@ -94,7 +94,7 @@ namespace Assessment_Test.DAL.Implementation
             };
         }
 
-        public List<PromotionRuleType> GetPromotionRuleTypes()
+        public IEnumerable<PromotionRuleType> GetPromotionRuleTypes()
         {
             return new List<PromotionRuleType>()
             {
