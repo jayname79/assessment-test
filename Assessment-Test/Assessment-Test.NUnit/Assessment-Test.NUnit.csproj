@@ -49,11 +49,19 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="FluentClass\FluentItem.cs" />
+    <Compile Include="FluentClass\IFluentItem.cs" />
+    <Compile Include="PromotionTestCases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Assessment-Test.BAL\Assessment-Test.BAL.csproj">
+      <Project>{2efab643-38e0-4800-8f7b-b806c36222fb}</Project>
+      <Name>Assessment-Test.BAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
