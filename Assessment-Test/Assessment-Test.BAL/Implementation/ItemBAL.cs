@@ -40,14 +40,14 @@ namespace Assessment_Test.BAL.Implementation
 
             try
             {
-                var activePromotionRules = _itemDAL.GetActivePromotionRules();
+                var activePromotionRules = _itemDAL.GetActivePromotionRules(); // Singleton
                 foreach (var item in Items)
                 {
                     if (!itemsConsidered.Contains(item.ID))
                     {
                         var currRule = activePromotionRules.FirstOrDefault(rule => rule.ItemId == item.ID);
 
-                        _promotion = _promotionFactory.GetPromotionInstance(currRule.PromotionRuleTypeId);
+                        _promotion = _promotionFactory.GetPromotionInstance(currRule.PromotionRuleTypeId); // Factory Pattern
                         result += _promotion.CheckAndApplyPromotion(item, Items, itemsConsidered);
                     }
                 }

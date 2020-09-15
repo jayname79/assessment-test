@@ -12,10 +12,13 @@ namespace Assessment_Test.BAL.Implementation
     {
         public IPromotion GetPromotionInstance(EnumPromotionRuleType enumPromotionRuleType)
         {
-            if (EnumPromotionRuleType.Comb == enumPromotionRuleType)
-                return new ComboPromotion();
-            else
-                return new OnePlusOnePromotion();
+            switch (enumPromotionRuleType)
+            {
+                case EnumPromotionRuleType.Comb:
+                    return new ComboPromotion();
+                default :
+                    return new OnePlusOnePromotion();
+            }
         }
     }
 }
