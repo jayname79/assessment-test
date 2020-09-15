@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Implementation\ComboPromotion.cs" />
-    <Compile Include="Implementation\Item.cs" />
     <Compile Include="Implementation\ItemBAL.cs" />
     <Compile Include="Implementation\OnePlusOnePromotion.cs" />
     <Compile Include="Implementation\PromotionFactory.cs" />
