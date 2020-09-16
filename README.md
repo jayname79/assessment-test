@@ -19,7 +19,7 @@ Code change is required only for new rule type.
  1. Singleton Pattern with thread safety
  2. Factory Design Pattern
  3. Dependency Injection
- 4. Interface Segration Principle
+ 4. Interface Segregation Principle
  5. Fluent Design Pattern
  6. Open Closed Principle
  7. Single Responsibility Principle
