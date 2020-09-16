@@ -24,3 +24,4 @@ Note - Hard-coded data is returned due to unavailability of SQL server
  6. Open Closed Principle
  7. Single Responsibility Principle
  8. Dependency Inversion Principle
+ 9. Handle nullable variable
