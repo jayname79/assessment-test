@@ -6,7 +6,7 @@ Below tables are considered in this project to make it configurable.
 - Promotions Rule Type
 - Active Promotions Rule
 
-Note - Hardcoded data is returned due to unavaibility of SQL server
+Note - Hard-coded data is returned due to unavailability of SQL server
 
 # Description for tables
  1. ItemMaster - Master data for items. i.e. A,B,C,D...
