@@ -13,7 +13,7 @@ Note - Hard-coded data is returned due to unavailability of SQL server
  2. PromotionsRuleType - List of Promotion Rule type. i.e. Combo offer, On plus one offer
  3. ActivePromotionRule - List of current promotion rules for items. It's configurable. We can change the paramaterised logic anytime for existing rule. i.e. qty,price. Also we can set up existing promotion rule for items.
  
- We need to change code only for new rule type. 
+Code change is required only for new rule type. 
 
 # Design Pattern - Coding standard
  1. Singleton Pattern with thread safety
